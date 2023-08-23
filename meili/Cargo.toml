@@ -1,0 +1,13 @@
+[package]
+name = "meili"
+version="0.0.1"
+edition="2021"
+
+[dependencies]
+  meilisearch-sdk = "0.24.1"
+  # futures: because we want to block on futures
+  futures = "0.3"
+  # serde: required if you are going to use documents
+  serde = { version="1.0",   features = ["derive"] }
+  # serde_json: required in some parts of this guide
+  serde_json = "1.0"
